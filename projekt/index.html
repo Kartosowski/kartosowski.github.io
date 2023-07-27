@@ -1,0 +1,198 @@
+    <!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>TwójSerwer.pl | Strona Główna</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/main.css'>
+    <script src="https://cdn.jsdelivr.net/gh/leonardosnt/mc-player-counter/dist/mc-player-counter.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" href="logo.png" type="image/icon type">
+</head>
+<body>
+    <section class="ip-page" id="hideit" >
+            <div class="box" >
+                <div class="wrapper">
+                    
+                    <div class="zamknij">
+                        <a onclick="hide('hideit')" href="#">
+                        <i class="fa fa-close"></i>
+                        </a>
+                    </div>
+                    <div class="align">
+                        <div class="count"> 
+                            
+                            <p>1.</p>
+                        </div>
+                        <p class="text">Zainstaluj najnowszą wersję Minecraft'a!<br><a href="https://minecraft.net">Pobierz Minecraft na PC/Mac</a></p>
+                    </div>
+                    <div class="align">
+                        <div class="count"> 
+                            <p>2.</p>
+                        </div>
+                        <p class="text">Włącz Klienta, a następnie wejdź zakładkę Tryb wieloosobowy</p>
+                    </div>
+                    <div class="align">
+                        <div class="count"> 
+                            <p>3.</p>
+                        </div>
+                        <p class="text">Dodaj serwer do listy i połącz się wpisując następujący adres IP: NazwaSerwer.pl</p>
+                    </div>
+                    <div class="copy-ip">
+                        <p id="a">NazwaSerwera.pl</p>
+                        <a href="#skopiowano" id="btn" onclick="copyDivToClipboard()">
+                            <div class="copy">
+                                <i class="fa-solid fa-copy"></i>
+                            </div>
+                            <script>
+                                function copyDivToClipboard() {
+                                    var range = document.createRange();
+                                    range.selectNode(document.getElementById("a"));
+                                    window.getSelection().removeAllRanges(); // clear current selection
+                                    window.getSelection().addRange(range); // to select text
+                                    document.execCommand("copy");
+                                    window.getSelection().removeAllRanges();// to deselect
+                                    document.style.overflowY = document.body.style.overflowY == "hidden" ? "scroll" : "hidden";
+                                }
+                            </script>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <main class="main-page" id="#">
+        <div class="wrapper">
+            <nav>
+                <div class="align">
+                    <img src="logo.png">
+                    
+                </div>
+                <div class="align">
+                    <ul class="list align">
+
+                        <li class="align">
+                            <i class="fa fa-bookmark"></i>
+                            <a href="#">Strona Główna</a>
+                        </li>
+                        <li class="align">
+                            <i class="fa fa-book"></i>
+                            <a href="#nie-dodalem">Regulamin</a>
+                        </li>
+                    </ul>
+                    <button class="overlay"><i class="fa fa-cart-shopping"></i>Sklep</button>
+                </div>
+            </nav>
+            <header>
+                <div class="content">
+                    <h1>NazwaSerwera<br>
+                        <span style="font-family: 'Gilroy-light', sans-serif; font-size: 24px;">
+                            Brak informacji!
+                        </span>
+                    </h1>
+                    
+                    <div class="odstepy">
+                        <p style="text-align: left;"><i class="fa fa-user"></i>
+                            Online Graczy: <span data-playercounter-ip="hypixel.net">0</span>
+                        </p>
+
+                        <button class="overlay" onclick="hide('hideit')" style="margin-top: 10px;"><i class="fa fa-play"></i>Wejdź do gry</button>
+                        <script>
+                            function hide(id) {
+                                var div = document.getElementById(id);
+                                setTimeout(function(){ window.scrollTo(0, 0); }, 0);
+                                div.style.display = div.style.display == "block" ? "none" : "block";
+
+                                document.body.style.overflowY = document.body.style.overflowY == "hidden" ? "scroll" : "hidden";
+                            }
+                        </script>
+                    </div>
+                </div>
+            </header>
+        </div>
+    </main>
+    <section class="trailer" id="#trailer">
+        <div class="wrapper">
+            <div class="content"> 
+                <div class="align">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Rla3FUlxJdE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+                </div>
+                <div class="align">
+                    <div class="title"> 
+
+                        <h1>Trailer serwera!</span></h1>
+                        <p>Trailer wykonany przez Minecraft!</p>
+
+                    </div>
+                    <a href="https://youtu.be/Rla3FUlxJdE" target="_blank">
+                        <button class="overlay" style="margin-top: 10px;"><i class="fa fa-eye"></i>Zobacz na YouTube</button>
+                    </a>
+                </div>
+
+                
+            </div>
+
+        
+
+
+        </div>
+    </section>
+    <section class="coznajdziesz">
+        <div class="wrapper">
+
+            <div class="title">
+                <p>Co znajdziesz na serwerze?</p>
+            </div>
+                <p><i class="fa fa-quote-left"></i>Lorem Ipsum jest tekstem stosowanym jako przykładowy wypełniacz w przemyśle poligraficznym.<i class="fa fa-quote-right"></i></span></p>
+        </div>
+    </section>
+    <section class="status">
+        <div class="wrapper">
+            <div class="align">
+                <div>
+                    <h1>Status Serwerowy</h1>
+                    <p>Zobacz co się dzieje!</p>
+                </div>
+                <div class="test">
+                    <h1><i class="fa fa-user"></i> Online</h1>
+                    <p>W grze    <span data-playercounter-ip="hypixel.net">0</span> osób</p>
+                    <h1><i class="fa fa-gamepad"></i> Tryby</h1>
+                    <p>Posiadamy na serwerze 2 tryby!</p>
+                </div>
+    
+            </div>
+
+        </div>
+    </section>
+    <section class="footer">
+        <div class="wrapper">
+            <div class="line"></div>
+            <div class="content">
+                <div class="align">
+                    <div>
+                        <p>NazwaSerwera nie jest powiązany z firmą Mojang AB. </p>
+                        <p>Wykonanie przez: Kartos</p>
+                    </div>
+                </div>
+                <div class="align">
+                    <div>
+                        <a href="#">
+                            <p>Strona Główna</p>
+                        </a>
+                        <a href="#">
+                            <p>Regulamin</p>
+                        </a>
+                        <a href="#">
+                            <p>Discord</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    
+</body>
+</html>
